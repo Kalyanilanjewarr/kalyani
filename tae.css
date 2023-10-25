@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(176, 152, 152);
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+nav {
+    background-color: rgb(41, 39, 39);
+    box-shadow: 0 0 4px #414b55;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding: 8px; /* Adjust padding as needed */
+}
+
+.company-logo img {
+    width: 100px;
+    height: 40px;
+}
+
+.nav-links ul {
+    gap: 20px;
+}
+
+.hover-link {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.hover-link:hover {
+    color: rgb(153, 153, 45);
+}
+
+.hover-link:active {
+    color: red;
+    font-weight: 400;
+}
+
+.search-bar {
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding: 0 12px; /* '0 12px' sets padding only for the left and right sides */
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+}
+
+.search-button {
+    background-color: rgb(101, 162, 200);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: darkblue;
+}
+
+.cont {
+    position: relative;
+    min-height: 72vh;
+    background-color: black;
+    font-size: 1.3rem;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('maxresdefault.jpg');
+    backdrop-filter: blur(20px);
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+    gap: 20px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myprogress {
+    width: 50vw;
+    cursor: pointer;
+}
+
+main {
+    padding-top: 50px;
+}
+
+.songItem {
+    height: 30px;
+    width: 150%;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem img {
+    width: 50px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 2px;
+}
+.timestamp i{
+    cursor: pointer;
+}
